@@ -53,8 +53,23 @@ body{
 .bar:hover{
     opacity: 1;
     transform: scale(1.1);
-    background-color: white;
-    border: #ddd;
+    background-color: whitesmoke;
+    border: whitesmoke;
+}
+
+.bar:visited{
+    border: 1px solid #0099FF;
+    background-color: #4e4e4e;
+}
+
+.bar:active{
+    border: 1px solid #0099FF;
+    background-color: #4e4e4e;
+}
+
+.bar:focus{
+    border: 1px solid #0099FF;
+    background-color: #4e4e4e;
 }
 
 
@@ -69,6 +84,12 @@ input[name="r"]{
     object-fit: contain;
 }
 
+.text1{
+    width: 400%;
+    height: 100%;
+    display: flex;
+}
+
 
 .images{
     width: 400%;
@@ -80,6 +101,11 @@ input[name="r"]{
     width: 400%;
     height: 100%;
     display: flex;
+}
+
+.text2{
+    width: 25%;
+    transition: all 1s ease-in-out;
 }
 
 .slide{
@@ -103,23 +129,6 @@ input[name="r"]{
     margin-left: -75%;
 }
 
-
-
-#r1:checked ~ .gigi .text1 .s1{
-    margin-left: 0;
-}
-
-#r2:checked ~ .gigi .text1 .s1{
-    margin-left: -25%;
-}
-
-#r3:checked ~ .gigi .text1 .s1{
-    margin-left: -50%;
-}
-
-#r4:checked ~ .gigi .text1 .s1{
-    margin-left: -75%;
-}
 
 
 @media (max-width: 420px){
