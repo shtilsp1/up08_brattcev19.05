@@ -84,11 +84,6 @@ input[name="r"]{
     object-fit: contain;
 }
 
-.text1{
-    width: 400%;
-    height: 100%;
-    display: flex;
-}
 
 
 .images{
@@ -134,9 +129,18 @@ input[name="r"]{
 @media (max-width: 420px){
     .navigation{
         position: absolute;
-    bottom: 16px;
+    bottom: 25px;
     right: 450px;
     transform: translateX(-50%);
     display: flex;
+    }
+    .text{
+        position: absolute;
+        bottom: 0px;
+        left: 450px;
+        transform: translateX(40%);
+        font-family: 'Courier New', Courier, monospace;
+        color: #ddd;
+        font-size: 20px;
     }
 }
