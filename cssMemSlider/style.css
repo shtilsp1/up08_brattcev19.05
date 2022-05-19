@@ -57,6 +57,7 @@ body{
     border: #ddd;
 }
 
+
 input[name="r"]{
     position: absolute;
     visibility: hidden;
@@ -83,7 +84,7 @@ input[name="r"]{
 
 .slide{
     width: 25%;
-    transition: all.6 ease;
+    transition: all 1s ease-in-out;
 }
 
 #r1:checked ~ .images .s1{
@@ -102,6 +103,31 @@ input[name="r"]{
     margin-left: -75%;
 }
 
-@media (max-width: 350px){
-    
+
+
+#r1:checked ~ .gigi .text1 .s1{
+    margin-left: 0;
+}
+
+#r2:checked ~ .gigi .text1 .s1{
+    margin-left: -25%;
+}
+
+#r3:checked ~ .gigi .text1 .s1{
+    margin-left: -50%;
+}
+
+#r4:checked ~ .gigi .text1 .s1{
+    margin-left: -75%;
+}
+
+
+@media (max-width: 420px){
+    .navigation{
+        position: absolute;
+    bottom: 16px;
+    right: 450px;
+    transform: translateX(-50%);
+    display: flex;
+    }
 }
